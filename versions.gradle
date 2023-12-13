@@ -1,0 +1,49 @@
+ext {
+    set("compileSdkVersion", 34)
+    set("buildToolsVersion", "33.0.3")
+    set("minSdkVersion", 23)
+    set("targetSdkVersion", 34)
+}
+
+subprojects {
+    afterEvaluate {
+        if (plugins.hasPlugin("com.android.library") || plugins.hasPlugin("com.android.application")) {
+            android {
+                compileSdkVersion(rootProject.ext.compileSdkVersion)
+
+                defaultConfig {
+                    minSdkVersion(rootProject.ext.minSdkVersion)
+                    targetSdkVersion(rootProject.ext.targetSdkVersion)
+                    testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+                    consumerProguardFiles("consumer-rules.pro")
+                }
+
+                if (plugins.hasPlugin("com.android.library")) {
+                    flavorDimensions("environment")
+                    productFlavors {
+                        register("development")
+                        register("stage")
+                        register("uat")
+                    }
+                }
+
+                compileOptions {
+                    sourceCompatibility = JavaVersion.VERSION_17
+                    targetCompatibility = JavaVersion.VERSION_17
+                }
+
+                kotlinOptions {
+                    jvmTarget = "17"
+                }
+
+                buildFeatures {
+                    compose = true
+                }
+
+                composeOptions {
+                    kotlinCompilerExtensionVersion = "1.4.6"
+                }
+            }
+        }
+    }
+}

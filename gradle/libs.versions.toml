@@ -1,0 +1,171 @@
+[versions]
+kotlin = "1.8.21"
+composeVersion = "1.4.3"
+androidxComposeBom = "2023.04.01"
+androidxComposeCompiler = "1.4.7"
+timber = "5.0.1"
+okHttp = "4.10.0"
+flipper = "0.195.0"
+soloader  = "0.10.5"
+retrofit = "2.9.0"
+retrofitSerializationConverter = "0.8.0"
+chucker = "3.5.2"
+hiltCompiler = "1.0.0"
+dagger = "2.44.2"
+hiltComposeVersion = "1.0.0"
+daggerAndroid = { module = "com.google.dagger:dagger-android", version.ref = "daggerAndroid" }
+kotlinxCoroutine = "1.6.4"
+androidGradlePlugin = "8.0.2"
+androidDesugarJdkLibs = "1.2.2"
+androidxActivity = "1.6.1"
+androidxComposeRuntimeTracing = "1.0.0-alpha01"
+ksp = "1.7.21-1.0.8"
+hilt = "2.44.2"
+hiltExt = "1.0.0"
+secrets = "2.0.1"
+androidxCore = "1.9.0"
+androidxNavigation = "2.5.3"
+androidxAppCompat = "1.5.1"
+androidxCoreSplashscreen = "1.0.0"
+androidxLifecycle = "2.6.0-alpha03"
+androidxHiltNavigationCompose = "1.0.0"
+coil = "2.2.2"
+kotlinxCoroutines = "1.6.4"
+accompanist = "0.28.0"
+flagKit = "1.0.2"
+coilVersion = "2.2.2"
+kotlinxDateTime = "0.4.0"
+material = "1.8.0"
+serializationJson = "1.4.1"
+androidxDataStore = "1.0.0"
+protobuf = "3.21.12"
+protobufPlugin = "0.8.19"
+libphonenumber = "8.12.20"
+mapsCompose = "2.9.1"
+playServices = "17.0.0"
+constraintCompose = "1.0.1"
+material3 = "1.1.1"
+accompanistNavigationMaterial= '0.30.1'
+org-jetbrains-kotlin-android = "1.9.0"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+com-google-android-material-material = "1.8.0"
+constraintlayout = "2.1.4"
+navigation-fragment-ktx = "2.5.3"
+navigation-ui-ktx = "2.5.3"
+
+[libraries]
+kotlin = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin" }
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
+accompanist-systemuicontroller = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "accompanist" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxCoreSplashscreen" }
+
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
+#Compose
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-compose-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout" }
+material = { module = "androidx.compose.material:material", version.ref = "composeVersion" }
+androidx-compose-material-iconsExtended = { group = "androidx.compose.material", name = "material-icons-extended" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
+androidx-compose-material3-windowSizeClass = { group = "androidx.compose.material3", name = "material3-window-size-class" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+androidx-lifecycle-runtimeCompose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidxLifecycle" }
+androidx-compose-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata" }
+androidx-compose-runtime-tracing = { group = "androidx.compose.runtime", name = "runtime-tracing", version.ref = "androidxComposeRuntimeTracing" }
+androidx-compose-ui-test = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-ui-testManifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-util = { group = "androidx.compose.ui", name = "ui-util" }
+androidx-compose-constraint = { group = "androidx.constraintlayout:constraintlayout-compose", name = "constraint-compose", version.ref = "constraintCompose" }
+
+date = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDateTime" }
+
+#Accompanist
+accompanist-flowlayout = { group = "com.google.accompanist", name = "accompanist-flowlayout", version.ref = "accompanist" }
+accompanist-navigation = { group = "com.google.accompanist", name = "accompanist-navigation-material", version.ref = "accompanistNavigationMaterial" }
+
+# External Libraries
+
+kotlinxCoroutine = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutine" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofitSerializationConverter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofitSerializationConverter" }
+serializationJson = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serializationJson" }
+okHttpLogging = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okHttp" }
+okHttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okHttp" }
+chuckerInterceptor = { module = "com.github.chuckerteam.chucker:library", version.ref = "chucker" }
+chuckerInterceptorNoOp = { module = "com.github.chuckerteam.chucker:library-no-op", version.ref = "chucker" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+
+coil-kt = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+coil-kt-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+coil-kt-svg = { group = "io.coil-kt", name = "coil-svg", version.ref = "coil" }
+
+# Debug Libraries
+flipper = { module = "com.facebook.flipper:flipper", version.ref = "flipper" }
+soloader = { module = "com.facebook.soloader:soloader", version.ref = "soloader" }
+flipperNetwork = { module = "com.facebook.flipper:flipper-network-plugin", version.ref = "flipper" }
+
+# Apt Libraries
+hiltAndroidCompiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "dagger" }
+hiltNavigationCompose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltComposeVersion" }
+daggerProcessor = { module = "com.google.dagger:dagger-android-processor", version.ref = "daggerAndroid" }
+androidx-lifecycle-viewModelCompose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "androidxLifecycle" }
+
+
+#Hilt
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "androidxHiltNavigationCompose" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt-ext-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltExt" }
+hilt-ext-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hiltExt" }
+
+# Navigation
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidxNavigation" }
+androidx-navigation-testing = { group = "androidx.navigation", name = "navigation-testing", version.ref = "androidxNavigation" }
+
+# Google Play Libraries
+playLocation = { module = "com.google.android.gms:play-services-location", version.ref = "playServices" }
+maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServices" }
+mapCompose = { module = "com.google.maps.android:maps-compose", version.ref = "mapsCompose" }
+
+
+# Dependencies of the included build-logic
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+
+androidx-dataStore-core = { group = "androidx.datastore", name = "datastore", version.ref = "androidxDataStore" }
+androidx-dataStore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "androidxDataStore" }
+protobuf-kotlin-lite = { group = "com.google.protobuf", name = "protobuf-kotlin-lite", version.ref = "protobuf" }
+protobuf-protoc = { group = "com.google.protobuf", name = "protoc", version.ref = "protobuf" }
+
+coil = { module = "io.coil-kt:coil-compose", version.ref = "coilVersion" }
+flag-kit = { module = "com.github.murgupluoglu:flagkit-android", version.ref = "flagKit" }
+google-libphonenumber = { module = "com.googlecode.libphonenumber:libphonenumber", version.ref = "libphonenumber" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+com-google-android-material-material = { group = "com.google.android.material", name = "material", version.ref = "com-google-android-material-material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation-fragment-ktx" }
+navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation-ui-ktx" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets" }
+protobuf = { id = "com.google.protobuf", version.ref = "protobufPlugin" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
