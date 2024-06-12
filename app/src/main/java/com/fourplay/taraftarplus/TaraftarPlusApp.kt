@@ -24,10 +24,10 @@ class TaraftarPlusApp : Application(), ImageLoaderFactory {
         val appConfig = CountlyConfig(
             this,
             "5d67ca40be7b520caa51a7bf36dbf9e75f62860f",
-            "https://trial-adivery.count.ly/dashboard#/6660346df1298193326609fc/"
+            "https://trial-adivery.count.ly"
         )
             .setLoggingEnabled(true)
-            .setParameterTamperingProtectionSalt("153546849785")
+//            .setParameterTamperingProtectionSalt("153546849785")
 
         Countly.sharedInstance().init(appConfig)
 
