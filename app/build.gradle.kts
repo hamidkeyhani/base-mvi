@@ -112,5 +112,5 @@ dependencies {
     implementation(libs.soloader)
     implementation(libs.accompanist.navigation)
     implementation(libs.material)
-
+    implementation("ly.count.android:sdk:24.4.1")
 }

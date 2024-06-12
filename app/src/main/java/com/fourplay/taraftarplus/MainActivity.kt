@@ -1,6 +1,7 @@
 package com.fourplay.taraftarplus
 
 import android.os.Bundle
+import android.util.Log
 import android.view.WindowManager
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -35,6 +36,8 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
+import ly.count.android.sdk.Countly
+import ly.count.android.sdk.CountlyConfig
 
 @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
 @AndroidEntryPoint
@@ -48,6 +51,27 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         val splashScreen = installSplashScreen()
         super.onCreate(savedInstanceState)
+
+//        val appConfig = CountlyConfig(
+//            this,
+//            "5d67ca40be7b520caa51a7bf36dbf9e75f62860f",
+//            "https://trial-adivery.count.ly/dashboard#/6660346df1298193326609fc/"
+//        )
+//            .setLoggingEnabled(true)
+//            .setParameterTamperingProtectionSalt("153546849785")
+//
+//        Countly.sharedInstance().init(appConfig)
+//
+//        Countly.sharedInstance().events().recordEvent("madsein", 1)
+//
+////        Countly.sharedInstance().setViewTracking(true)
+////        Countly.sharedInstance().flushRequestQueues()
+////        Countly.sharedInstance().doStoredRequests()
+//
+//        Log.i(
+//            "TAG",
+//            "onCreate1: Countly sdk initialized: ${Countly.sharedInstance().isInitialized}"
+//        )
 
         var uiState: MainActivityUiState by mutableStateOf(MainActivityUiState.Loading)
 
