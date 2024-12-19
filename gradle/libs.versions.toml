@@ -3,10 +3,11 @@ kotlin = "1.8.21"
 composeVersion = "1.4.3"
 androidxComposeBom = "2023.04.01"
 androidxComposeCompiler = "1.4.7"
+reactNative = "0.20.1"
 timber = "5.0.1"
 okHttp = "4.10.0"
 flipper = "0.195.0"
-soloader  = "0.10.5"
+#soloader  = "0.10.5"
 retrofit = "2.9.0"
 retrofitSerializationConverter = "0.8.0"
 chucker = "3.5.2"
@@ -54,6 +55,7 @@ com-google-android-material-material = "1.8.0"
 constraintlayout = "2.1.4"
 navigation-fragment-ktx = "2.5.3"
 navigation-ui-ktx = "2.5.3"
+activity = "1.9.3"
 
 [libraries]
 kotlin = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin" }
@@ -93,6 +95,7 @@ accompanist-navigation = { group = "com.google.accompanist", name = "accompanist
 # External Libraries
 
 kotlinxCoroutine = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutine" }
+react-native = { module = "com.facebook.react:react-native", version.ref = "reactNative" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofitSerializationConverter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofitSerializationConverter" }
 serializationJson = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serializationJson" }
@@ -108,7 +111,7 @@ coil-kt-svg = { group = "io.coil-kt", name = "coil-svg", version.ref = "coil" }
 
 # Debug Libraries
 flipper = { module = "com.facebook.flipper:flipper", version.ref = "flipper" }
-soloader = { module = "com.facebook.soloader:soloader", version.ref = "soloader" }
+#soloader = { module = "com.facebook.soloader:soloader", version.ref = "soloader" }
 flipperNetwork = { module = "com.facebook.flipper:flipper-network-plugin", version.ref = "flipper" }
 
 # Apt Libraries
@@ -157,6 +160,7 @@ com-google-android-material-material = { group = "com.google.android.material", 
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation-fragment-ktx" }
 navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation-ui-ktx" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }

@@ -1,10 +1,10 @@
 plugins {
-    id("taraftarplus.android.feature")
-    id("taraftarplus.android.library.compose")
+    id("mvi.android.feature")
+    id("mvi.android.library.compose")
 }
 
 android {
-    namespace = "com.fourplay.onboarding"
+    namespace = "com.base.onboarding"
 }
 dependencies {
 

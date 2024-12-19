@@ -1,13 +1,13 @@
-package com.fourplay.datastore
+package com.base.datastore
 
 import android.content.SharedPreferences
-import com.fourplay.datastore.UserLocalDataStore.DataStoreKeys.JWT_TOKEN_KEY
-import com.fourplay.datastore.UserLocalDataStore.DataStoreKeys.REFRESH_TOKEN_KEY
-import com.fourplay.datastore.UserLocalDataStore.DataStoreKeys.USER_DATA_KEY
-import com.fourplay.datastore.model.UserDm
-import com.fourplay.datastore.model.UserLocalModel
-import com.fourplay.datastore.model.toDm
-import com.fourplay.datastore.model.toLocalModel
+import com.base.datastore.UserLocalDataStore.DataStoreKeys.JWT_TOKEN_KEY
+import com.base.datastore.UserLocalDataStore.DataStoreKeys.REFRESH_TOKEN_KEY
+import com.base.datastore.UserLocalDataStore.DataStoreKeys.USER_DATA_KEY
+import com.base.datastore.model.UserDm
+import com.base.datastore.model.UserLocalModel
+import com.base.datastore.model.toDm
+import com.base.datastore.model.toLocalModel
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json

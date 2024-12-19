@@ -1,8 +1,8 @@
 import com.android.build.api.variant.LibraryAndroidComponentsExtension
 import com.android.build.gradle.LibraryExtension
-import com.fourplay.taraftarplus.configureFlavors
-import com.fourplay.taraftarplus.configureKotlinAndroid
-import com.fourplay.taraftarplus.configurePrintApksTask
+import mvi.configureFlavors
+import mvi.configureKotlinAndroid
+import mvi.configurePrintApksTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.artifacts.VersionCatalogsExtension

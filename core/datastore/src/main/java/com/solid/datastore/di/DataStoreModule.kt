@@ -1,10 +1,10 @@
 
 
-package com.fourplay.datastore.di
+package com.base.datastore.di
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.fourplay.datastore.UserLocalDataStore
+import com.base.datastore.UserLocalDataStore
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -13,7 +13,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object DataStoreModule {
-    private const val SHARED_PREFERENCES_NAME = "taraftar-plus-app_shared_preferences"
+    private const val SHARED_PREFERENCES_NAME = "mvi-plus-app_shared_preferences"
 
     @Singleton
     @Provides

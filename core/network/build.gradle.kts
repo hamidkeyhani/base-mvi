@@ -1,11 +1,11 @@
 plugins {
-    id("taraftarplus.android.library")
-    id("taraftarplus.android.hilt")
+    id("mvi.android.library")
+    id("mvi.android.hilt")
     id("kotlinx-serialization")
 }
 
 android {
-    namespace = "com.fourplay.network"
+    namespace = "com.base.network"
 }
 
 dependencies {

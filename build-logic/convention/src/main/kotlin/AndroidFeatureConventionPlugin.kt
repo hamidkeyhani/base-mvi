@@ -9,13 +9,13 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             pluginManager.apply {
-                apply("taraftarplus.android.library")
-                apply("taraftarplus.android.hilt")
+                apply("mvi.android.library")
+                apply("mvi.android.hilt")
             }
 //            extensions.configure<LibraryExtension> {
 //                defaultConfig {
 //                    testInstrumentationRunner =
-//                        "com.fourplay.taraftarplus.core.testing.NiaTestRunner"
+//                        "com.base.mvi.core.testing.NiaTestRunner"
 //                }
 //            }
 

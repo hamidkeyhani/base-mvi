@@ -1,4 +1,4 @@
-package com.fourplay.datastore.model
+package com.base.datastore.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

@@ -1,4 +1,4 @@
-package com.fourplay.datastore
+package com.base.datastore
 
 import org.junit.Test
 

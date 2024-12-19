@@ -1,11 +1,11 @@
 plugins {
-    id("taraftarplus.android.application")
-    id("taraftarplus.android.application.compose")
-    id("taraftarplus.android.hilt")
+    id("mvi.android.application")
+    id("mvi.android.application.compose")
+    id("mvi.android.hilt")
 }
 
 android {
-    namespace = "com.fourplay.taraftarplus"
+    namespace = "com.base.mvi"
     flavorDimensions.add("environment")
 
     productFlavors {
@@ -13,40 +13,46 @@ android {
             versionCode = 1
             versionName = "1.0.0"
             dimension = "environment"
-            applicationId = "com.fourplay.taraftarplus.dev"
+            applicationId = "com.base.mvi.dev"
         }
         create("stage") {
             versionCode = 1
             versionName = "1.0.0"
             dimension = "environment"
-            applicationId = "com.fourplay.taraftarplus.stage"
+            applicationId = "com.base.mvi.stage"
         }
         create("uat") {
             versionCode = 1
             versionName = "1.0.0"
             dimension = "environment"
-            applicationId = "com.fourplay.taraftarplus"
+            applicationId = "com.base.mvi"
         }
     }
 
     defaultConfig {
-        applicationId = "com.fourplay.taraftarplus"
-    }
-
-    signingConfigs {
-        create("debug-sign") {
-            storeFile = rootProject.file("debug-key.keystore")
-            storePassword = "Aa123456"
-            keyPassword = "Aa123456"
-            keyAlias = "solid-key"
+        applicationId = "com.base.mvi"
+        // NDK ABI filters for supporting multiple architectures
+        externalNativeBuild {
+            cmake {
+                abiFilters("armeabi-v7a", "x86", "x86_64", "arm64-v8a")
+            }
         }
     }
+
+//    signingConfigs {
+//        create("debug-sign") {
+//            storeFile = rootProject.file("debug-key.keystore")
+//            storePassword = "Test123456"
+//            keyPassword = "Test123456"
+//            keyAlias = "key0"
+//        }
+//    }
 
     buildTypes {
         getByName("debug") {
             isMinifyEnabled = false
             versionNameSuffix = "-debug"
-            signingConfig = signingConfigs.getByName("debug-sign")
+//            signingConfig = signingConfigs.getByName("debug-sign")
         }
         getByName("release") {
             isMinifyEnabled = false
@@ -54,7 +60,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            signingConfig = signingConfigs.getByName("debug-sign")
+//            signingConfig = signingConfigs.getByName("debug-sign")
             versionNameSuffix = "-release"
         }
 
@@ -63,7 +69,7 @@ android {
             outputs.forEach { output ->
                 if (output is com.android.build.gradle.internal.api.BaseVariantOutputImpl) {
                     output.outputFileName =
-                        "Taraftar-plus-v${versionName}(${this.versionCode})-${name}.apk"
+                        "Mvi-plus-v${versionName}(${this.versionCode})-${name}.apk"
                 }
             }
         }
@@ -75,12 +81,15 @@ android {
 }
 
 dependencies {
+    implementation(files("libs/app-react-module.aar"))
 
     implementation(project(":core:common"))
     implementation(project(":core:designsystem"))
     implementation(project(":core:datastore"))
     implementation(project(":core:network"))
     implementation(project(":feature:onBoarding"))
+    implementation(project(":react-native-module"))
+//    implementation(project(":react-native-module"))
 //    implementation(project(":core:domain"))
 //    implementation(project(":core:data"))
 //    implementation(project(":core:sharedApi"))
@@ -109,8 +118,8 @@ dependencies {
 
 //    implementation(libs.flipper)
 //    implementation(libs.flipperNetwork)
-    implementation(libs.soloader)
+//    implementation(libs.soloader)
     implementation(libs.accompanist.navigation)
     implementation(libs.material)
-
+    implementation(libs.react.native)
 }

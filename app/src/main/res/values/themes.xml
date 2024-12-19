@@ -4,37 +4,37 @@
 
     <!-- Allows us to override night specific attributes in the
          values-night folder. -->
-    <style name="NightAdjusted.Theme.TaraftarPlus" parent="android:Theme.Material.Light.NoActionBar">
+    <style name="NightAdjusted.Theme.Mvi" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
     </style>
 
     <!-- Allows us to override platform level specific attributes in their
          respective values-vXX folder. -->
-    <style name="PlatformAdjusted.Theme.TaraftarPlus" parent="NightAdjusted.Theme.TaraftarPlus">
+    <style name="PlatformAdjusted.Theme.Mvi" parent="NightAdjusted.Theme.Mvi">
         <item name="android:statusBarColor">@color/black30</item>
     </style>
 
     <!-- The final theme we use -->
-    <style name="Theme.TaraftarPlus" parent="PlatformAdjusted.Theme.TaraftarPlus" />
+    <style name="Theme.Mvi" parent="PlatformAdjusted.Theme.Mvi" />
 
     <style name="NightAdjusted.Theme.Splash" parent="Theme.SplashScreen">
         <item name="android:windowLightStatusBar" >true</item>
         <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
     </style>
 
-    <style name="Theme.TaraftarPlus.Splash" parent="NightAdjusted.Theme.Splash">
+    <style name="Theme.Mvi.Splash" parent="NightAdjusted.Theme.Splash">
         <item name="windowSplashScreenBackground">@color/black</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_100tb</item>
         <item name="android:windowSplashScreenBrandingImage" tools:targetApi="s">@drawable/ic_100tb</item>
-        <item name="postSplashScreenTheme">@style/Theme.TaraftarPlus</item>
+        <item name="postSplashScreenTheme">@style/Theme.Mvi</item>
     </style>
 
     <style name="Theme.AppSplash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/black</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
         <item name="windowSplashScreenAnimationDuration">1000</item>
-        <item name="postSplashScreenTheme">@style/Theme.TaraftarPlus</item>
+        <item name="postSplashScreenTheme">@style/Theme.Mvi</item>
         <item name="android:statusBarColor" >@color/black</item>
         <item name="android:navigationBarColor">@color/black</item>
         <item name="android:windowLightStatusBar">true</item>

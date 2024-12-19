@@ -1,10 +1,10 @@
 plugins {
-    id("taraftarplus.android.library")
-    id("taraftarplus.android.hilt")
+    id("mvi.android.library")
+    id("mvi.android.hilt")
 }
 
 android {
-    namespace = "com.fourplay.datastore"
+    namespace = "com.base.datastore"
 }
 
 dependencies {

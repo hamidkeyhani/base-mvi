@@ -1,10 +1,10 @@
 plugins {
-    id("taraftarplus.android.library")
-    id("taraftarplus.android.library.compose")
+    id("mvi.android.library")
+    id("mvi.android.library.compose")
 }
 
 android {
-    namespace = "com.fourplay.designsystem"
+    namespace = "com.base.designsystem"
 }
 
 dependencies {

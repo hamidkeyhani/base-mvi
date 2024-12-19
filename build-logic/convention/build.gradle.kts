@@ -2,7 +2,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.fourplay.taraftarplus.buildlogic"
+group = "com.base.mvi.buildlogic"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17
@@ -17,50 +17,50 @@ dependencies {
 gradlePlugin {
     plugins {
         register("androidFeature") {
-            id = "taraftarplus.android.feature"
+            id = "mvi.android.feature"
             implementationClass = "AndroidFeatureConventionPlugin"
         }
         register("androidFeatureData") {
-            id = "taraftarplus.android.feature.data"
+            id = "mvi.android.feature.data"
             implementationClass = "AndroidFeatureDataConventionPlugin"
         }
         register("androidApplicationCompose") {
-            id = "taraftarplus.android.application.compose"
+            id = "mvi.android.application.compose"
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
         register("androidLibrary") {
-            id = "taraftarplus.android.library"
+            id = "mvi.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
         register("androidApplication") {
-            id = "taraftarplus.android.application"
+            id = "mvi.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
 
         register("androidLibraryCompose") {
-            id = "taraftarplus.android.library.compose"
+            id = "mvi.android.library.compose"
             implementationClass = "AndroidLibraryComposeConventionPlugin"
         }
         register("androidHilt") {
-            id = "taraftarplus.android.hilt"
+            id = "mvi.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
 
         //        register("androidApplicationJacoco") {
-//            id = "nowinandroid.android.application.jacoco"
+//            id = "mvi.android.application.jacoco"
 //            implementationClass = "AndroidApplicationJacocoConventionPlugin"
 //        }
 //        register("androidLibraryJacoco") {
-//            id = "nowinandroid.android.library.jacoco"
+//            id = "mvi.android.library.jacoco"
 //            implementationClass = "AndroidLibraryJacocoConventionPlugin"
 //        }
 //        register("androidTest") {
-//            id = "nowinandroid.android.test"
+//            id = "mvi.android.test"
 //            implementationClass = "AndroidTestConventionPlugin"
 //        }
 
 //        register("firebase-perf") {
-//            id = "nowinandroid.firebase-perf"
+//            id = "mvi.firebase-perf"
 //            implementationClass = "FirebasePerfConventionPlugin"
 //        }
     }

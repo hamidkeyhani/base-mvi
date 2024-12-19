@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="loading">Loading</string>
-    <string name="TryAgain">Tekrar Dene</string>
-    <string name="AnErrorOccurred">Hata Oluştu! &#x1F615;</string>
+    <string name="TryAgain">Try Again</string>
+    <string name="AnErrorOccurred">AnErrorOccurred &#x1F615;</string>
     <string name="empty" />
-    <string name="password_error_description">Lütfen şifrenizi giriniz</string>
-    <string name="date_should_be_in_past">Doğum tarihi bugünden önce olmalıdı</string>
-    <string name="email_is_wrong">Lütfen geçerli bir e-posta adresi giriniz</string>
-    <string name="field_is_required">Bu alan gereklidir</string>
-    <string name="your_password_must_contain_at_least_one_number">Şifreniz en az bir rakam içermelidir.</string>
-    <string name="your_password_must_be_at_least_six_digits">Şifreniz en az 6 haneli olmalıdır.</string>
-    <string name="your_passwords_must_match">Şifreleriniz birbiriyle eşleşmelidir.</string>
-    <string name="countries">ülkeler</string>
-    <string name="mobile">Telefon</string>
-    <string name="customers">Müşteriler</string>
 </resources>

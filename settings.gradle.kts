@@ -18,7 +18,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TaraftarPlus"
+rootProject.name = "mvi"
 include(":app")
 include(":core")
 include(":core:designsystem")
@@ -27,3 +27,4 @@ include(":core:datastore")
 include(":feature")
 include(":feature:onBoarding")
 include(":core:network")
+include(":react-native-module")

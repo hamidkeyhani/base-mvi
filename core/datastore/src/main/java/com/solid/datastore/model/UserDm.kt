@@ -1,4 +1,4 @@
-package com.fourplay.datastore.model
+package com.base.datastore.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

@@ -1,9 +1,9 @@
 
 import com.android.build.api.dsl.ApplicationExtension
 import com.android.build.api.variant.ApplicationAndroidComponentsExtension
-import com.fourplay.taraftarplus.configureFlavors
-import com.fourplay.taraftarplus.configureKotlinAndroid
-import com.fourplay.taraftarplus.configurePrintApksTask
+import mvi.configureFlavors
+import mvi.configureKotlinAndroid
+import mvi.configurePrintApksTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
