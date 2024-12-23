@@ -81,14 +81,11 @@ android {
 }
 
 dependencies {
-    implementation(files("libs/app-react-module.aar"))
-
     implementation(project(":core:common"))
     implementation(project(":core:designsystem"))
     implementation(project(":core:datastore"))
     implementation(project(":core:network"))
     implementation(project(":feature:onBoarding"))
-    implementation(project(":react-native-module"))
 //    implementation(project(":react-native-module"))
 //    implementation(project(":core:domain"))
 //    implementation(project(":core:data"))

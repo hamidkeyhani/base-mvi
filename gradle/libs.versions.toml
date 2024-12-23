@@ -25,7 +25,7 @@ hilt = "2.44.2"
 hiltExt = "1.0.0"
 secrets = "2.0.1"
 androidxCore = "1.9.0"
-androidxNavigation = "2.5.3"
+androidxNavigation = "2.8.5"
 androidxAppCompat = "1.5.1"
 androidxCoreSplashscreen = "1.0.0"
 androidxLifecycle = "2.6.0-alpha03"
@@ -53,8 +53,8 @@ androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 com-google-android-material-material = "1.8.0"
 constraintlayout = "2.1.4"
-navigation-fragment-ktx = "2.5.3"
-navigation-ui-ktx = "2.5.3"
+navigation-fragment-ktx = "2.8.5"
+navigation-ui-ktx = "2.8.5"
 activity = "1.9.3"
 
 [libraries]
@@ -96,6 +96,7 @@ accompanist-navigation = { group = "com.google.accompanist", name = "accompanist
 
 kotlinxCoroutine = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutine" }
 react-native = { module = "com.facebook.react:react-native", version.ref = "reactNative" }
+react-native-gradle-plugin = { module = "com.facebook.react:react-native-gradle-plugin" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofitSerializationConverter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofitSerializationConverter" }
 serializationJson = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serializationJson" }

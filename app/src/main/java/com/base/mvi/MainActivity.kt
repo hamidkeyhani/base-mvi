@@ -24,12 +24,10 @@ import androidx.navigation.compose.rememberNavController
 import com.base.designsystem.theme.MviTheme
 import com.base.mvi.ui.MviApp
 import com.base.mvi.ui.rememberMviAppState
-import com.example.react_native_module.ReactNativeActivity
 import com.google.accompanist.navigation.material.BottomSheetNavigator
 import com.google.accompanist.navigation.material.ExperimentalMaterialNavigationApi
 import com.google.accompanist.navigation.material.ModalBottomSheetLayout
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
-import com.reactappmodule.BaseActivityFromReactModule
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.onEach
@@ -109,18 +107,13 @@ class MainActivity : ComponentActivity() {
                             navController = navController,
                         ),
                         onOpenReactNativeActivity = {
-//                            openReactNativeActivity()
+
                         }
                     )
                 }
             }
         }
 
-    }
-
-    private fun openReactNativeActivity() {
-        val intent = Intent(this, ReactNativeActivity::class.java)
-        this.startActivity(intent)
     }
 
 
